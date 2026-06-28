@@ -22,6 +22,11 @@ jobs:
         with:
           go-version-file: go.mod
 
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
       - name: Discover Adapter Directories
         id: get_directories
         uses: actions/github-script@v7
